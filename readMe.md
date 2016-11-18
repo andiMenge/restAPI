@@ -8,5 +8,6 @@ curl http://localhost:1337/foo
 start API
 
 ```
-go run ./*
+go build .
+./restAPISkeleton
 ```
