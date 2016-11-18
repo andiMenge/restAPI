@@ -6,7 +6,6 @@ import (
 	"io"
 	"io/ioutil"
 	"net/http"
-	//"github.com/gorilla/mux"
 )
 
 func Index(w http.ResponseWriter, r *http.Request) {
