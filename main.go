@@ -5,9 +5,11 @@ import (
 	"net/http"
 )
 
+const port = ":1337"
+
 func main() {
 
 	router := NewRouter()
-
-	log.Fatal(http.ListenAndServe(":1337", router))
+	log.Printf("starting webserver on port %s", port)
+	log.Fatal(http.ListenAndServe(port, router))
 }
