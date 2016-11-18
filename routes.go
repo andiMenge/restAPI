@@ -24,10 +24,4 @@ var routes = Routes{
 		"/foo",
 		Foo,
 	},
-	Route{
-		"postJson",
-		"POST",
-		"/queueJob",
-		Queuejob,
-	},
 }
