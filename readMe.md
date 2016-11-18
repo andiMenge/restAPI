@@ -1,7 +1,8 @@
 trigger api 
 
 ```
-curl -H "Content-Type: application/json" -d '{"name":"foobar"}' http://localhost:1337/queueJob
+curl http://localhost:1337/
+curl http://localhost:1337/foo
 ```
 
 start API
