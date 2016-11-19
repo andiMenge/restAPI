@@ -12,3 +12,8 @@ func Index(w http.ResponseWriter, r *http.Request) {
 func Foo(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "bar")
 }
+
+func WriteRedis(w http.ResponseWriter, r *http.Request) {
+	//http.Error(w, err.Error(), http.StatusInternalServerError)
+	//w.WriteHeader(http.StatusOK)
+}
