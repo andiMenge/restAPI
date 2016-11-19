@@ -9,9 +9,9 @@ const port = ":1337"
 func main() {
 	err := initRedis()
 	if err != nil {
-		ErrLog.Fatalf("redis db not accessable: %s", err)
+		ErrLog.Fatalf("connection with redis failed: %s", err)
 	}
-	InfoLog.Printf("redis start successful")
+	InfoLog.Printf("connection with redis successful")
 
 	router := NewRouter()
 	InfoLog.Printf("starting webserver on port %s", port)
