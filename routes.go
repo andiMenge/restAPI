@@ -26,7 +26,7 @@ var routes = Routes{
 	},
 	Route{
 		"set",
-		"GET",
+		"Post",
 		"/set",
 		WriteRedis,
 	},
