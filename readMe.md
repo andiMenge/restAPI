@@ -11,6 +11,7 @@ start API
 
 ```
 go build .
+./restAPISkeleton -h
 ./restAPISkeleton
 ```
 
