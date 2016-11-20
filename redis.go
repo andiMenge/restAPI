@@ -5,21 +5,15 @@ import (
 	"gopkg.in/redis.v5"
 )
 
-const (
-	redisAddr = "localhost:6379"
-	redisPW   = "" // no password set
-	redisDB   = 0  // use default DB
-)
-
 //define redis client
 var redisClient *redis.Client
 
 //initialize redis client
 func initRedis() error {
 	redisClient = redis.NewClient(&redis.Options{
-		Addr:     redisAddr,
-		Password: redisPW,
-		DB:       redisDB,
+		Addr:     *redisAddr,
+		Password: *redisPW,
+		DB:       *redisDB,
 	})
 
 	_, err := redisClient.Ping().Result()
